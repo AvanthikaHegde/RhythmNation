@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Sign Up Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background-image: url('images/loginbgm.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 60px;
+            color: whitesmoke;
+        }
+        .container {
+            position: relative;
+            max-width: 900px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/1600x900/?music,abstract') no-repeat center center/cover;
+            filter: blur(10px);
+            z-index: -1;
+        }
+        .left-section {
+            max-width: 400px;
+        }
+        .left-section h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .left-section p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        .right-section {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+        }
+        .right-section h2 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .signup-button {
+            width: 100%;
+            padding: 10px;
+            background: #ffd700;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .signup-button:hover {
+            background: #e6c200;
+        }
+        .login-text {
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+        .login-text a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(244, 237, 237, 0.432);
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            color: #ffd700;
+        }
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar li {
+            margin-left: 30px;
+        }
+        .logo {
+            width: 125px;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="navbar">
+        <div class="search-container">
+            <img src="images/logo1.png" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="login.html">Signup/Login</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <h1>Join and Support the Music Community</h1>
+            <p>Sign up to explore and support your favorite artists. Be part of the Rhythm Nation!</p>
+        </div>
+        <div class="right-section">
+            <h2>Sign Up</h2>
+            <input type="text" class="input-field" placeholder="Full Name">
+            <input type="email" class="input-field" placeholder="Email">
+            <input type="text" class="input-field" placeholder="Username">
+            <input type="password" class="input-field" placeholder="Password">
+            <input type="password" class="input-field" placeholder="Confirm Password">
+            <button class="signup-button">Sign Up</button>
+            <p class="login-text">Already have an account? <a href="login.html">Log In</a></p>
+        </div>
+    </div>
+</body>
+</html>
+

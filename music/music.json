@@ -1,0 +1,47 @@
+[
+    {
+    "id": 1,
+    "name": "Skyfall-Instrumental",
+    "artist": "Adele",
+    "path": "music/song1.mp3"
+    },
+    {
+    "id": 2,
+    "name": "HipHop Beats",
+    "artist": "Artist 2",
+    "path": "music/song2.mp3"
+    },
+    {
+        "id": 3,
+        "name": "Can-Can Song-Metal Version",
+        "artist": "Artist 3",
+        "path": "music/song3.mp3"
+    },
+    {
+        "id": 4,
+        "name": "Midnight Notes-Lofi Version",
+        "artist": "Artist 4",
+        "path": "music/song4.mp3"
+    },
+    {
+        "id": 5,
+        "name": "Alone-BloDeasons",
+        "artist": "Artist 5",
+        "path": "music/song5.mp3"
+    },
+    {
+        "id": 6,
+        "name": "Meri Duniya-Yash Ashir",
+        "artist": "Artist 6",
+        "path": "music/song6.mp3"
+    },
+    {
+        "id": 7,
+        "name": "Indian Tribal Beats",
+        "artist": "Artist 7",
+        "path": "music/song7.mp3"
+    }
+   ]
+
+   
+   

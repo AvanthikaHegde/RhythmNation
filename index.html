@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Rhythm Nation</title>
+ <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+ <div class="container">
+ <div class="nav">
+   <div class="search-container">
+    <img src="images/logo1.png" class="logo">
+    <input type="text" id="searchBar" placeholder="Search for an artist..." onkeyup="searchArtist()">
+   </div>
+<ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a href="about.html">About</a></li>
+ <li><a href="music.html">Music</a></li>
+ <li><a href="donations.html">Donations</a></li>
+ <li><a href="login.html">Signup/Login</a></li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="content">
+ <div class="left-col">
+ <h1>My Playlist</h1>
+ <audio id="mysound" controls>
+    <source src="" type="audio/mp3">
+    </audio>
+ <ul id="playlist">
+ </ul>
+ <h1>Create New Playlist</h1>
+ <footer>
+<p>&copy;2025 RhythmNation(Ava's Ecospace) </p>
+</footer>
+ </div>
+
+ <div class="right-col">
+ <p>Click Here To Listen whats Trending!</p><br>
+ <img src="images/play.png" id="icon" alt="Play/Pause">
+ <div class="headings"><h1><i>Popular Artists</i></h1></div>
+ <div class="artist">
+<ul id="artistsList"></ul>
+ </div>
+ <div class="headings"><h1><i>Upcoming Artists</i></h1></div>
+ <div class="upcoming">
+ <ul id="upcomingList"></ul>
+ </div>
+ </div>
+ </div>
+
+ <script src="scripts/script.js"></script>
+</body>
+</html>

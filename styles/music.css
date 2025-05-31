@@ -1,0 +1,206 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(244, 237, 237, 0.432);
+    padding: 10px 20px 5px 20px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    margin-top: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-left: 30px;
+}
+
+.logo {
+    width: 125px;
+    padding-right: 20px;
+}
+
+/* Player container */
+.player-container {
+    width: 100vw;
+    height: calc(100vh - 60px); /* Account for navbar height */
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 5vw;
+    overflow-y: auto;
+}
+
+/* Album carousel section */
+.album-carousel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    margin-bottom: 2vh;
+}
+
+.album-art {
+    width: 25vw;
+    height: 25vw;
+    max-width: 300px;
+    max-height: 300px;
+    background: #333;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.album-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 50%;
+}
+
+.album-art.active { 
+    width: 30vw;
+    height: 30vw;
+    max-width: 350px;
+    max-height: 350px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    z-index: 2;
+    opacity:100%;
+}
+
+/* Track info section */
+.track-info {
+    text-align: center;
+    margin: 2vh 0;
+    flex-grow: 1;
+}
+
+.track-info h3 {
+    font-size: 5vw;
+    margin-bottom: 1vh;
+}
+
+.track-info p {
+    font-size: 3vw;
+    color: #aaa;
+}
+
+/* Controls section */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin: 2vh 0;
+}
+
+button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 6vw;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#play-pause {
+    font-size: 8vw;
+}
+
+/* Progress bar */
+input[type="range"] {
+    width: 90%;
+    margin: 2vh auto;
+    height: 4px;
+    -webkit-appearance: none;
+    background: #444;
+    border-radius: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Time display */
+.time-display {
+    font-size: 3vw;
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .track-info h3 {
+        font-size: 2.5rem;
+    }
+    
+    .track-info p {
+        font-size: 1.5rem;
+    }
+    
+    button {
+        font-size: 2.5rem;
+    }
+    
+    #play-pause {
+        font-size: 3rem;
+    }
+    
+    .time-display {
+        font-size: 1rem;
+    }
+    
+    .navbar {
+        padding: 15px 40px;
+    }
+    
+    .navbar li {
+        margin-left: 40px;
+    }
+}

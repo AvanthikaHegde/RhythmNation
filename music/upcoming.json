@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Olivia",
+        "image": "../images/olivia.jpg"
+    },
+    {
+        "name": "Doechii",
+        "image": "../images/doechii.jpg"
+    },
+    {
+        "name": "Anuv",
+        "image": "../images/anuv.jpg"
+    },
+    {
+        "name": "Kid Laroi",
+        "image": "../images/laroi.jpg"
+    },
+    {
+        "name": "Brodha V",
+        "image": "../images/bv.jpg"
+    },
+    {
+        "name": "Tate",
+        "image": "../images/tate.jpg"
+    },
+    {
+        "name": "HanuKind",
+        "image": "../images/hk.jpg"
+    },
+    {
+        "name": "Jubin",
+        "image": "../images/jubin.jpg"
+    },
+    {
+        "name": "PineExpress",
+        "image": "../images/pe.jpg"
+    },
+    {
+        "name": "Diljit",
+        "image": "../images/diljit.jpg"
+    }
+
+]

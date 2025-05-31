@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm Nation Player</title>
+    <link rel="stylesheet" href="styles/music.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="search-container">
+            <img src="images/logo1.png" class="logo" alt="Rhythm Nation Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="login.html">Signup/Login</a></li>
+        </ul>
+    </div>
+
+    <div class="player-container">
+        <div class="album-carousel">
+            <div class="album-art">
+                <img src="images/album1.png" alt="Album Cover 1">
+            </div>
+            <div class="album-art active">
+                <img src="images/album3.png" alt="Album Cover 2">
+            </div>
+            <div class="album-art">
+                <img src="images/album2.png" alt="Album Cover 3">
+            </div>
+        </div>
+        <div class="track-info">
+            <h3 id="track-title">Blinding Lights</h3>
+            <p id="artist-name">The Weeknd</p>
+        </div>
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play-pause">▶</button>
+            <button id="next">⏭</button>
+        </div>
+        <input type="range" id="progress" value="0" max="100">
+        <div class="time-display">
+            <span id="current-time">0:00</span> / <span id="duration">3:20</span>
+        </div>
+    </div>
+
+    <script src="scripts/music.js"></script>
+</body>
+</html>

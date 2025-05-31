@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Taylor Swift",
+        "image": "../images/taylorswift.jpg"
+    },
+    {
+        "name": "Ed Sheeran",
+        "image": "../images/edsheeran.jpg"
+    },
+    {
+        "name": "Adele",
+        "image": "../images/adele.jpg"
+    },
+    {
+        "name": "The Weeknd",
+        "image": "../images/weekend.jpg"
+    },
+    {
+        "name": "Billie Eilish",
+        "image": "../images/billie.jpg"
+    },
+    {
+        "name": "Lady Gaga",
+        "image": "../images/lg.jpg"
+    },
+    {
+        "name": "Sabrina",
+        "image": "../images/sabrina.jpg"
+    },
+    {
+        "name": "BTS",
+        "image": "../images/bts.jpg"
+    },
+    {
+        "name": "Shreya",
+        "image": "../images/shreya.jpg"
+    },
+    {
+        "name": "Justin",
+        "image": "../images/jb.jpg"
+    }
+
+]
